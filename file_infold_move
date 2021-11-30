@@ -1,0 +1,2 @@
+# Linux (mv or cp) specific files from a text list of files, list.txt for all the file names are needed
+cat list.txt | tr -d '\r' |while read line; do mv "$line" new/; done
